@@ -40,4 +40,4 @@ mvn clean install -P minify
 
 ### Contacts
 
-For questions and comments please contact [Henning Bredel](https://github.com/ridoo)
+For questions and comments please contact [Henning Bredel](mailto:h.bredel@52north.org) |[@ridoo](https://github.com/ridoo)
