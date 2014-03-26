@@ -9,14 +9,18 @@ $ git init ; git add submodule git@github.com:52North/js-sensorweb-client js-sen
 $ cp js-sensorweb-client/pom.xml .
 ```
 From here you do
+
 1. make changes to the `pom.xml` so that the path relevant properties reference the file under `js-sensorweb-client`
 1. test if everything builds as normal by doing `mvn clean install -P minify`
 1. to make changes, copy those files to some place under `custom-project`, for example 
+
 ```
 $ mkdir js/models
 $ cp js-sensorweb-client/WebContent/js/models/settings.js js/models
 ```
+
 1. now adjust the reference in the `pom.xml` (keep in mind that [the minify plugin](http://samaxes.github.io/minify-maven-plugin/) appends `js` and `css` per default), for example
+
 ```
 <!-- get from ${basedir}/js-sensorweb-client/WebContent/css/../../../css/models/ -->
 <cssSourceFile>../../../css/mainstyles.css</cssSourceFile>
