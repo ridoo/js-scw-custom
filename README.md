@@ -26,7 +26,7 @@ $ cp js-sensorweb-client/WebContent/js/models/settings.js js/models
 <cssSourceFile>../../../css/mainstyles.css</cssSourceFile>
 ```
 
-The sample `pom.xml` makes use of a `${_basedir}` property which is not present in the current version of the [JS SensorWeb Client](https://github.com/52North/js-sensorweb-client). This may change as we will see, if this approach makes sense.
+The sample `pom.xml` makes use of a [`${_basedir}` property](https://github.com/ridoo/js-scw-custom/blob/master/pom.xml#L19) which is not present in the current version of the [JS SensorWeb Client](https://github.com/52North/js-sensorweb-client). This may change as we will see, if this approach makes sense.
 
 ### Build the client
 
