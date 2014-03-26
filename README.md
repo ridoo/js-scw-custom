@@ -1,5 +1,5 @@
 ## JS SensorWeb Client Customization Example
-This project aims to give an example project for customizations around the [52°North JS SensorWeb Client](https://github.com/52North/js-sensorweb-client). The actual goal is to show how the client code base can be used within a customized context. By using submodules one can put the customized project in a separate repository without leaving track of further improvements, features and bugfixes on the current root project.
+This project aims to give an example project for customizations around the [52°North JS SensorWeb Client](https://github.com/52North/js-sensorweb-client). The actual goal is to show how the client code base can be used within a customized context. By [using Git submodules](http://git-scm.com/book/en/Git-Tools-Submodules) one can put the customized project in a separate repository without leaving track of further improvements, features and bugfixes on the current root project.
 
 ### How it Works
 If you want to perform customizations on the [52°North JS SensorWeb Client](https://github.com/52North/js-sensorweb-client) you either could [clone this repository](https://github.com/ridoo/js-scw-custom) and start from there or you start from scratch in an empty project. For both you will need [Maven to be installed](http://maven.apache.org).
