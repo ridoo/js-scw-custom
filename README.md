@@ -10,7 +10,7 @@ $ cp js-sensorweb-client/pom.xml .
 ```
 From here you do
 
-1. make changes to the `pom.xml` so that the path relevant properties reference the file under `js-sensorweb-client`
+1. make changes to the `pom.xml` so that the path relevant properties reference the file under `js-sensorweb-client`. The sample `pom.xml` makes use of a [`${_basedir}` property](https://github.com/ridoo/js-scw-custom/blob/master/pom.xml#L19) which is not present in the current version of the [JS SensorWeb Client](https://github.com/52North/js-sensorweb-client). However, this may change as we will see, if this approach makes sense.
 1. test if everything builds as normal by doing `mvn clean install -P minify`
 1. to make changes, copy those files to some place under `custom-project`, for example 
 
@@ -26,7 +26,6 @@ $ cp js-sensorweb-client/WebContent/js/models/settings.js js/models
 <cssSourceFile>../../../css/mainstyles.css</cssSourceFile>
 ```
 
-The sample `pom.xml` makes use of a [`${_basedir}` property](https://github.com/ridoo/js-scw-custom/blob/master/pom.xml#L19) which is not present in the current version of the [JS SensorWeb Client](https://github.com/52North/js-sensorweb-client). This may change as we will see, if this approach makes sense.
 
 ### Build the client
 
